@@ -1,10 +1,10 @@
 .moviecardContainer {
-  width: 126px;
-  height: 254px;
+  width: 7.875rem;
+  height: 15.875rem;
 
   & > .imageContainer {
-    width: 126px;
-    height: 190px;
+    width: 7.875rem;
+    height: 11.875rem;
     overflow: hidden;
 
     img {
@@ -17,7 +17,7 @@
 
   & > .title {
     color: #4c4c4c;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 
     display: -webkit-box;
@@ -25,7 +25,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 8px 0 4px;
+    margin: .5rem 0 .25rem;
   }
 
   & > .releaseYear {
@@ -33,9 +33,9 @@
 
     color: #929292;
     font-style: italic;
-    font-size: 14px;
+    font-size: .875rem;
     font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
-    margin: 4px 0 4px;
+    margin: .25rem 0 .25rem;
   }
 
   & > .switch {
@@ -43,14 +43,14 @@
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    column-gap: 8px;
-    margin: 0 0 4px;
+    column-gap: .5rem;
+    margin: 0 0 .25rem;
 
     & > input[type='checkbox'] {
       margin: 0;
 
       visibility: hidden;
-      font-size: 14px;
+      font-size: .875rem;
       cursor: pointer;
       position: relative;
 
@@ -59,24 +59,23 @@
         position: absolute;
         visibility: visible;
         color: #fff;
-        top: -4px;
-        width: 126px;
+        top: -0.25rem;
+        width: 7.875rem;
       }
 
       &:checked:before {
         content: '\2605';
         position: absolute;
         color: #ff2052;
-        top: -5px;
+        top: -0.3125rem;
       }
     }
 
     & > .label {
       color: #929292;
       font-style: italic;
-      font-size: 14px;
-      font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
-      margin: 4px 0 4px;
+      font-size: .875rem;
+      margin: .25rem 0 .25rem;
     }
   }
 }

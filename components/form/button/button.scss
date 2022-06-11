@@ -1,13 +1,13 @@
 .buttonContainer {
   background: #e50914;
   border: 0;
-  border-radius: 4px;
+  border-radius: .25rem;
   color: #ffffff;
   cursor: pointer;
   padding: 0 1rem;
-  width: 130px;
-  min-height: 40px;
-  font-size: 20px;
+  width: 8.125rem;
+  min-height: 2.5rem;
+  font-size: 1.25rem;
 
   display: flex;
   justify-content: center;
@@ -19,11 +19,11 @@
   }
 
   & > .loader {
-    border: 4px solid #e50914;
-    border-top: 4px solid #fff;
+    border: .25rem solid #e50914;
+    border-top: .25rem solid #fff;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     animation: spin 200ms linear infinite;
   }
 }

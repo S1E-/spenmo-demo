@@ -21,7 +21,7 @@ export function MovieCard({ movie }: Props) {
   };
 
   return (
-    <div className="moviecardContainer" style={{width: "126px"}}>
+    <div className="moviecardContainer" style={{width: "7.875rem"}}>
       <div className="imageContainer">
         <img width="126" height="190" src={movie.Poster} alt={movie.Title} />
       </div>

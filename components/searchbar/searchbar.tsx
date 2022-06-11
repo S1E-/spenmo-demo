@@ -56,7 +56,7 @@ export function SearchBar({ options }: Props) {
       <form onSubmit={handleSubmit}>
         <div className="inputContainer">
           <Input
-            placeholder="Search OMDB"
+            placeholder="Search Movies..."
             onChange={(e) => {
               dispatch(updateQuery(e.target.value));
             }}
@@ -75,7 +75,7 @@ export function SearchBar({ options }: Props) {
           isLoading={isLoading}
           type="submit"
           label="Search"
-          customStyle={{ padding: '8px' }}
+          customStyle={{ padding: '0.5rem' }}
         />
       </form>
     </div>

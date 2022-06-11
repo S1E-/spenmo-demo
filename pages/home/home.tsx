@@ -79,7 +79,7 @@ export function Home() {
                 ? 'No more movie left'
                 : 'Load More'
             }
-            customStyle={{ padding: '4px', width: '40%', height: '40px' }}
+            customStyle={{ padding: '0.25rem', width: '40%', height: '2.5rem' }}
             onClick={() => handleLoadMore()}
           />
         </div>

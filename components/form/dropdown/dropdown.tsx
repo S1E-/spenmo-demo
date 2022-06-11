@@ -15,16 +15,16 @@ export function Dropdown({ options }: Props) {
           backgroundColor: '#fff',
           backgroundPosition: 'center right',
           backgroundRepeat: 'no-repeat',
-          border: '1px solid #aaa',
-          borderRadius: '2px',
-          fontSize: '25px',
+          border: '.0625rem solid #aaa',
+          borderRadius: '.125rem',
+          fontSize: '1.5625rem',
           margin: '0',
           overflow: 'hidden',
-          padding: '6px 4px',
+          padding: '.375rem .25rem',
           textOverflow: 'ellipsis',
           whiteSpace: 'nowrap',
           outline: 'none',
-          borderRight: '16px solid transparent',
+          borderRight: '1rem solid transparent',
         }}
       >
         {options.map((option) => (

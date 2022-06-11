@@ -2,15 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
+  height: 3rem;
   background-color: #111;
 
-  padding: 0 10px;
+  padding: 0 .625rem;
 
   & > .title {
     color: #e50914;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   & > .links {

@@ -3,9 +3,9 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    gap: 8px;
+    gap: .5rem;
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 50rem) {
       flex-flow: column wrap;
       align-items: center;
     }
@@ -14,22 +14,22 @@
       display: flex;
       background-color: #fff;
       align-items: center;
-      padding: 0 4px;
-      margin-right: 8px;
-      border-radius: 4px;
+      padding: 0 .25rem;
+      margin-right: .5rem;
+      border-radius: .25rem;
       padding-right: 0;
 
-      min-width: 250px;
+      min-width: 15.625rem;
       width: 50%;
 
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 50rem) {
         width: 80%;
         min-width: 80%;
       }
     }
 
     & > button {
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 50rem) {
         width: 80%;
         min-width: 80%;
       }
