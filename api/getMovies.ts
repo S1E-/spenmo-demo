@@ -1,7 +1,7 @@
 import { ResponseType, Success, ReturnType } from '../types';
 
 export async function getMovies(title: string, type: string, page: number = 1) {
-  let url = `https://www.omdbapi.com/?apiKey=c17418a0&s=${title}&page=${page}`;
+  let url = `https://www.omdbapi.com/?apiKey=c17418a0&s=${title.trim()}&page=${page}`;
   if (type !== 'all') url += `&type=${type}`;
 
   try {

@@ -13,9 +13,9 @@ import {
 } from '../../store/moviesSlice';
 
 import SearchBar from '../../components/searchbar';
-import MovieCard from '../../components/movieCard';
 import Button from '../../components/form/button';
 import ErrorMessage from '../../components/errorMessage';
+import Gallery from '../../components/gallery';
 
 export function Home() {
   const moviesStore = useSelector(
@@ -51,19 +51,12 @@ export function Home() {
     <div className="homeContainer">
       <SearchBar options={searchbarDropdownOptions} />
 
-      {/* @ts-ignore */}
       {moviesStore.error ? (
         <ErrorMessage>
           No results found for <span>"{moviesStore.error}"</span>
         </ErrorMessage>
       ) : (
-        <section className="moviecardsWrapper">
-          {moviesStore?.movies
-            ?.filter((movie) => movie.Poster !== 'N/A')
-            .map((movie) => (
-              <MovieCard movie={movie} key={movie.imdbID} />
-            ))}
-        </section>
+        <Gallery movies={moviesStore.movies} />
       )}
 
       {moviesStore?.movies?.length > 0 && (
@@ -79,7 +72,12 @@ export function Home() {
                 ? 'No more movie left'
                 : 'Load More'
             }
-            customStyle={{ padding: '0.25rem', width: '40%', height: '2.5rem' }}
+            customStyle={{
+              padding: '0.5rem',
+              minWidth: '40%',
+              width: 'fit-content',
+              height: '2.5rem',
+            }}
             onClick={() => handleLoadMore()}
           />
         </div>

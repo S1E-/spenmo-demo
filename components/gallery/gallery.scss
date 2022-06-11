@@ -1,16 +1,25 @@
-.favoritesContainer {
+.moviecardsWrapper {
   flex: 1;
+
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  flex-flow: row wrap;
   gap: 1.5rem;
 
   width: 50%;
   max-width: 52.5rem;
-  margin: 1.25rem auto;
+  margin: 0 auto;
   cursor: pointer;
 
   @media screen and (max-width: 50rem) {
     width: 100%;
+  }
+
+  & > .placeHolder {
+    opacity: 0;
+    cursor: default;
+    height: 0;
+    width: 7.875rem;
+    margin-bottom: 0;
   }
 }

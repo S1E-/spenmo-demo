@@ -60,14 +60,13 @@
         visibility: visible;
         color: #fff;
         top: -0.25rem;
-        width: 7.875rem;
       }
 
       &:checked:before {
         content: '\2605';
         position: absolute;
         color: #ff2052;
-        top: -0.3125rem;
+        top: -0.25rem;
       }
     }
 

@@ -3,6 +3,7 @@ import './favorites.scss';
 
 import MovieCard from '../../components/movieCard';
 import ErrorMessage from '../../components/errorMessage';
+import Gallery from '../../components/gallery';
 
 export function Favorites() {
   const data = JSON.parse(localStorage.getItem('favorites')) || {};
@@ -10,7 +11,7 @@ export function Favorites() {
   return (
     <div className="favoritesContainer">
       {favMovies.length ? (
-        favMovies.map((movie) => <MovieCard movie={movie} />)
+        <Gallery movies={favMovies} />
       ) : (
         <ErrorMessage>You have no favorites.</ErrorMessage>
       )}
