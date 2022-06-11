@@ -1,0 +1,11 @@
+.navbarLinkContainer {
+  cursor: pointer;
+  padding: 0 10px;
+  text-transform: capitalize;
+  font-size: 24px;
+
+  &:hover {
+    color: #e50914;
+    text-decoration: underline;
+  }
+}

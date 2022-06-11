@@ -1,0 +1,38 @@
+.searchBarContainer {
+  & > form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+
+    @media screen and (max-width: 800px) {
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    & > .inputContainer {
+      display: flex;
+      background-color: #fff;
+      align-items: center;
+      padding: 0 4px;
+      margin-right: 8px;
+      border-radius: 4px;
+      padding-right: 0;
+
+      min-width: 250px;
+      width: 50%;
+
+      @media screen and (max-width: 800px) {
+        width: 80%;
+        min-width: 80%;
+      }
+    }
+
+    & > button {
+      @media screen and (max-width: 800px) {
+        width: 80%;
+        min-width: 80%;
+      }
+    }
+  }
+}

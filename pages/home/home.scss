@@ -1,0 +1,39 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+
+  & > .errorMessage {
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    padding: 12px;
+    margin: 0 auto;
+    color: #000;
+    background-color: #ffffff;
+
+    & > span {
+      font-weight: 800;
+    }
+  }
+
+  & > .moviecardsWrapper {
+    flex: 1;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 24px;
+
+    width: 50%;
+    max-width: 840px;
+    margin: 0 auto;
+    cursor: pointer;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  & > .LoadMoreContainer {
+    display: flex;
+    justify-content: center;
+  }
+}

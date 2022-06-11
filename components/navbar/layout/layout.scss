@@ -1,0 +1,20 @@
+.navBarcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background-color: #111;
+
+  padding: 0 10px;
+
+  & > .title {
+    color: #e50914;
+    cursor: pointer;
+    font-size: 32px;
+  }
+
+  & > .links {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

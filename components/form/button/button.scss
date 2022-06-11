@@ -1,0 +1,38 @@
+.buttonContainer {
+  background: #e50914;
+  border: 0;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0 1rem;
+  width: 130px;
+  min-height: 40px;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:disabled {
+    background: #957f7f;
+    cursor: not-allowed;
+  }
+
+  & > .loader {
+    border: 4px solid #e50914;
+    border-top: 4px solid #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 200ms linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

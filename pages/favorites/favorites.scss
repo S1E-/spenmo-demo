@@ -1,0 +1,11 @@
+.favoritesContainer {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+
+  width: 50%;
+  max-width: 840px;
+  margin: 20px auto;
+  cursor: pointer;
+}

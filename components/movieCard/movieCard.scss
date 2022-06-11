@@ -1,0 +1,82 @@
+.moviecardContainer {
+  width: 126px;
+  height: 254px;
+
+  & > .imageContainer {
+    width: 126px;
+    height: 190px;
+    overflow: hidden;
+
+    img {
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  & > .title {
+    color: #4c4c4c;
+    font-size: 16px;
+    font-weight: 700;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 8px 0 4px;
+  }
+
+  & > .releaseYear {
+    display: block;
+
+    color: #929292;
+    font-style: italic;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+    margin: 4px 0 4px;
+  }
+
+  & > .switch {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 8px;
+    margin: 0 0 4px;
+
+    & > input[type='checkbox'] {
+      margin: 0;
+
+      visibility: hidden;
+      font-size: 14px;
+      cursor: pointer;
+      position: relative;
+
+      &:before {
+        content: '\2605';
+        position: absolute;
+        visibility: visible;
+        color: #fff;
+        top: -4px;
+        width: 126px;
+      }
+
+      &:checked:before {
+        content: '\2605';
+        position: absolute;
+        color: #ff2052;
+        top: -5px;
+      }
+    }
+
+    & > .label {
+      color: #929292;
+      font-style: italic;
+      font-size: 14px;
+      font-family: 'Times New Roman', Times, Baskerville, Georgia, serif;
+      margin: 4px 0 4px;
+    }
+  }
+}
